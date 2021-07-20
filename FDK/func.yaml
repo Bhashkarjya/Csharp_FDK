@@ -1,0 +1,10 @@
+schema_version: 20180708
+name: fdk
+version: 0.0.2
+runtime: docker
+memory: 60
+timeout: 120
+triggers:
+- name: dotnet-trigger
+  type: http
+  source: /dotnet-trigger
