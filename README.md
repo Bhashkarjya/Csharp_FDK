@@ -98,7 +98,41 @@ If you are new to Fn Project, you should start out with the [official documentat
    //Insert image
 
 ## Exploring functions and the different data formats
-  
-  
-
+  Navigate inside the UserFunction subdirectory. It contains a bunch of example user function files and a Program.cs file. The three structure looks 
+  similar to this.
+  ``` 
+  cd UserFunction 
+  ```
+  ### Raw data as input
+  Open the Example.cs file. The input is given as a raw string. To differentiate between different parameters, use the defined delimiters-
+  " ", ",", "'", "(",")". 
+  In order to access "Kevin", use GetValue("arg1"), similarly to access "18", use GetValue("arg2") and so on.
+  ```
+  name = input.GetValue("arg1");
+  age = input.GetValue("arg2");
+  ```
+  Inside the Program.cs file - 
+  //Insert the image
+  To execute this Example.cs file change the parameter inside executingAssembly.GetType("") to the full name of the user-defined class.
+  ```
+  Type functionType = executingAssembly.GetType("UserFunction.Example");
+  ```
+  Invoking the deployed function with Raw data-
+  ```
+  echo "Kevin 18 India" | fn invoke dotnet_fdk fdk
+  ```
+   
+  ### JSON as input
+  In order to pass JSON as an input to your function and to return a JSON object as a response, we need to make the following changes to our code.
+  //Insert Image
+   
+  Inside the Programm.cs file - 
+  To execute this JsonExample.cs file change the parameter inside executingAssembly.GetType("") to the full name of the user-defined class.
+  ```
+  Type functionType = executingAssembly.GetType("UserFunction.JsonExample");
+  ```
+  Invoking the deployed function with JSON input
+  ```
+    echo '{"Name":"Daniel","Age":18,"Subjects":["OS","CN"]}' | fn invoke dotnetFDK fdk 
+  ```
 
