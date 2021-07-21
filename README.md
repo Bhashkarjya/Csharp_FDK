@@ -172,4 +172,6 @@ If you are new to Fn Project, you should start out with the [official documentat
   ![Json_curl](https://user-images.githubusercontent.com/47633270/126525726-c29cc7ca-59d4-462f-b1e7-d566cf3aebe0.PNG)
 
 
-
+  ## Wrap Up
+  So we have created our C# function and deployed it locally in the Fn server and invoked it over Http. Write out some more functions of your own and deploy it and invoke it
+  using the Fn Platform.
