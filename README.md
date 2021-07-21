@@ -27,9 +27,10 @@ If you are new to Fn Project, you should start out with the [official documentat
   fn start
   ```
   If you have correctly followed the installation procedure, your terminal will look like this-
+  //FN_START image
   
   ### Clone the repository
-  - Clone the [Csharp_FDK repository](https://github.com/Bhashkarjya/Csharp_FDK) using the git clone command
+  - Open another terminal for the rest of the commands. Clone the [Csharp_FDK repository](https://github.com/Bhashkarjya/Csharp_FDK) using the git clone command
   ``` 
   git clone https://github.com/Bhashkarjya/Csharp_FDK.git 
   ```
